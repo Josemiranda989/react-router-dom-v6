@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { About } from "./About";
-import { Contact } from "./Contact";
-import { Home } from "./Home";
-import { NotFound } from "./NotFound";
-import { User } from "./User";
-import { GoToHome } from "./GoToHome";
+
+import { Home } from "./components/Home";
+import { NotFound } from "./components/NotFound";
+import { User } from "./components/User";
+import { GoToHomeBTN } from "./components/GoToHomeBTN";
+
+const About = () => <div>About</div>;
+const Contact = () => <div>Contact</div>;
 
 import "./App.css";
 function App() {
@@ -16,10 +18,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/users/:id" element={<User />} />
-          {/* <Route path="/*" element={<GoToHome />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <GoToHome />
+
+        <GoToHomeBTN />
       </BrowserRouter>
     </div>
   );

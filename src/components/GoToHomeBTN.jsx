@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const GoToHome = () => {
+export const GoToHomeBTN = () => {
   return (
     <>
       <button>
-        <Link to="/">GoToHomeBTN</Link>
+        <Link to="/">Go to home</Link>
       </button>
     </>
   );

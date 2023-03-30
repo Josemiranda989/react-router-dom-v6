@@ -1,6 +1,3 @@
-import React from 'react'
-import { GoToHome } from './GoToHome'
-
 export const NotFound = () => {
   return (
     <>
@@ -10,7 +7,6 @@ export const NotFound = () => {
         alt=""
       />
       <h1>Not found!</h1>
-      <GoToHome />
     </>
   );
-}
+};
